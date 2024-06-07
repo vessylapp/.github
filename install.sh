@@ -27,3 +27,4 @@ docker run --network vessyl-bridge --name vui -d -p 3000:3000 --restart always g
 
 # Print a success message
 echo "Vessyl installed successfully."
+echo "Access the web panel at http://localhost:3000 (or your servers IP)"
