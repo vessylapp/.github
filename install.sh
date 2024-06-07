@@ -43,6 +43,13 @@ echo "Pulling latest Vessyl UI image and running the container..."
 docker pull ghcr.io/vessylapp/vessyl-ui:latest
 docker run --network vessyl-bridge --name vui -d -p 3000:3000 --restart always ghcr.io/vessylapp/vessyl-ui:latest
 
+# Wait for the Vessyl UI container to be ready
+echo "Waiting for Vessyl UI to be ready..."
+while ! docker logs vui 2>&1 | grep -q "Ready"
+do
+  sleep 1
+done
+
 # Print a success message
 echo "Vessyl installed successfully."
 echo "Access the web panel at http://$(curl -4s https://ifconfig.io):3000"
