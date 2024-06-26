@@ -1,16 +1,13 @@
-# Vessyl
+# Vessyl ([Website](https://vessyl.app))
 
-> [!WARNING]
-> Website coming soon.
-
-Vessyl is a tool designed to make Docker easy. It features a web panel for managing your Docker containers and provides a simple way to install and manage your Docker applications.
+Vessyl is a fast and reliable alternative to Railway and Vercel. Why pay those high prices when you can self host?
 
 ## Features
 
-- Easy installation of Docker applications
-- Web panel for managing Docker containers
+- Easy integrations of your code.
+- Web panel for managing your 'Resources'
 - Auto restart of containers on startup
-- Always pulls the latest Docker images
+- Always pulls the latest resources
 - Auto updater
 
 ## Installation
@@ -18,7 +15,7 @@ Vessyl is a tool designed to make Docker easy. It features a web panel for manag
 To install Vessyl, you can use the provided install script. Run the following command in your terminal:
 
 ```shellscript
-curl -fsSL https://raw.githubusercontent.com/vessylapp/.github/master/install.sh | bash
+curl -fsSL https://vessyl.app/install.sh | bash
 ```
 
 This will create the necessary Docker network and volumes, pull the latest Docker images, and run the Docker containers. After the script completes, Vessyl will be installed and ready to use.
